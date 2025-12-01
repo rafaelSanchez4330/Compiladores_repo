@@ -8,6 +8,8 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
+        System.out.println("El compilador no soporta comentarios. Para finalizar el analisis escribe '}'\n");
+        System.out.println("Escribe un codigo: \n");
         AnalizadorLexico lex = new AnalizadorLexico();
         Analizador analizar = new Analizador(lex);
         analizar.programa();
